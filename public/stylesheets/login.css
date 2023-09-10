@@ -1,0 +1,8 @@
+.row{
+    box-shadow: rgba(0, 0, 0, 0.25) 3px 5px 6px;
+}
+
+h3{
+    font-size: 50px;
+    text-align: center;
+}

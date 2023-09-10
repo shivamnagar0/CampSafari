@@ -1,0 +1,112 @@
+body {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+#bg-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1; 
+    object-fit: cover;
+}
+
+.cover-container {
+  max-width: 60vw;
+}
+
+.nav-link {
+    padding: 0.25rem 0;
+    font-weight: 700;
+    color: rgba(255,255,255,0.5);
+    margin-left: 1rem;
+    border-bottom: 0.25rem solid transparent;
+}
+
+.nav-link:hover{
+    color: rgba(255,255,255,0.5);
+    border-bottom-color:rgba(255,255,255,0.5);
+}
+
+.nav-link.active {
+    color: white;
+    border-bottom-color:white;
+}
+
+/* button code */
+
+.button {
+    width: 120px;
+    height: 40px;
+    gap: 10px;
+    background-color: #fff;
+    border-radius: 30px;
+    color : inherit;
+    color: #111;
+    font-weight: 600;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    transition-duration: .2s;
+    text-decoration: none;
+    padding: 10px 10px 12px;
+    transition-duration: .5s;
+
+  }
+  
+  .svgIcon {
+    height: 25px;
+    transition-duration: 1.5s;
+  }
+  
+  .bell path {
+    fill: rgb(19, 19, 19);
+  }
+  
+  .button:hover {
+    color: #000;
+    text-decoration: none;
+    transition-duration: .5s;
+  }
+  
+  .button:active {
+    transform: scale(0.97);
+    transition-duration: .2s;
+  }
+  
+  .button:hover .svgIcon {
+    transform: rotate(250deg);
+    transition-duration: 1.5s;
+  }
+  
+/* button code */
+
+.heart{
+    color : #fa4e4e
+}
+
+#video-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+}
+
+@media (max-width: 768px) {
+  .lead{
+    font-size: small;
+  }
+  footer{
+    font-size: 12px;
+  }
+  .button{
+    font-size: 12px;
+    padding: 9px 6px 12px;
+  }
+}

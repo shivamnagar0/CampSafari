@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🏕️ Camp Safari</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+        integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <link rel="stylesheet" href="/stylesheets/home.css">
+</head>
+
+<body class="d-flex text-center text-white bg-dark">
+    <video autoplay muted loop id="bg-video">
+        <source src="https://res.cloudinary.com/dl87o0tbc/video/upload/v1694076721/CampSafari/campsafari_vid_o0knrj.mp4"
+            type="video/mp4">
+        <!-- Add additional source elements for other video formats if necessary -->
+    </video>
+
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+        <header class="mb-auto">
+            <div>
+                <h3 class="float-md-left mb-0">Camp Safari</h3>
+                <nav class="nav nav-masthead justify-content-center float-md-right">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link" href="/campgrounds">Campgrounds</a>
+                    <% if(!currentUser) { %>
+                        <a class="nav-link" href="/login">Login</a>
+                        <a class="nav-link" href="/register">Register</a>
+                        <% } else { %>
+                            <a class="nav-link" href="/logout">Logout</a>
+                            <% } %>
+                </nav>
+            </div>
+        </header>
+        <main class="px-3">
+            <h1 class="writer mb-1"></h1>
+            <p class="lead mb-4"> Welcome to Camp Safari! <br> Jump right in and explore our many campgrounds. <br>
+                Feel free to share some of your own and comment on others!</p>
+            <!-- <a href="/campgrounds" class="btn btn-lg btn-secondary font-weight-bold border-white bg-white">View
+                Campgrounds</a> -->
+            <a class="button" href="/campgrounds">
+                <svg class="svgIcon" viewBox="0 0 512 512" height="1em" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm50.7-186.9L162.4 380.6c-19.4 7.5-38.5-11.6-31-31l55.5-144.3c3.3-8.5 9.9-15.1 18.4-18.4l144.3-55.5c19.4-7.5 38.5 11.6 31 31L325.1 306.7c-3.2 8.5-9.9 15.1-18.4 18.4zM288 256a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z">
+                    </path>
+                </svg>
+                Explore
+            </a>
+
+        </main>
+
+        <footer class="mt-auto text-white-50">
+            <p>Made with <span class="heart">&hearts;</span> by Parveen Rikhari</p>
+        </footer>
+    </div>
+
+
+    <div id="video-overlay"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+        integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+        crossorigin="anonymous"></script>
+
+    <!-- Element to contain animated typing -->
+    <span id="element"></span>
+
+    <!-- Load library from the CDN -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('.writer', {
+            strings: ['Hey there!', 'Welcome to the CampSafari', 'Click below to explore...'],
+            typeSpeed: 100,
+            backSpeed: 50,
+            loop: true
+        });
+    </script>
+</body>
+</body>
+
+</html>
