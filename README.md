@@ -1,7 +1,7 @@
 # CampSafari
 
 # Link to the deployed application:
- [link to CampSafari](https://camp-safari.onrender.com/).
+ (https://camp-safari.onrender.com/).
 
 
 # Overview:
